@@ -8,12 +8,16 @@ public class Main  {
         double b = 33;
 
         double celsius = FarenheitToC(a);
-        System.out.println("68F to C = " + celsius + "C");
+        double farenheit = CelsiusToF(b);
+
+        System.out.println("68F to C = " + celsius + "C\n33C to F = " + farenheit + "F");
     }
 
     public static double FarenheitToC (double a) {
-        double result = (a - 32) * 5/9;
+        return (a - 32) * 5/9;
+    }
 
-        return result;
+    public static double CelsiusToF (double b) {
+        return (b * 9/5) + 32;
     }
 }
